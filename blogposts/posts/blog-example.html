@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #1e90ff;
+      --muted: #9aa4b2;
+      --text: #e6eef6;
+      --heading: #ffffff;
+      --border: rgba(255,255,255,0.1);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(180deg, #071022 0%, #081427 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      text-align: center;
+    }
+    h1 {
+      color: var(--heading);
+      margin-top: 0;
+    }
+    .date {
+      color: var(--muted);
+      font-size: 0.85em;
+      margin-bottom: 20px;
+    }
+    .hidden-content {
+      display: none; /* hides real blog text */
+    }
+    footer {
+      background: #0b1220;
+      border-top: 1px solid var(--border);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: var(--accent);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/photolocator/">Photo Locator</a>
+  </nav>
+
+  <div class="container">
+    <!-- Public "no access" message -->
+    <h1>Oopsies! 🚫</h1>
+    <p>You don’t have access to this blog post.</p>
+
+    <!-- Hidden real content -->
+    <div class="hidden-content">
+      <h1>Example Blog</h1>
+      <p class="date">(Month) (Day), (Year)</p>
+      <p>Example blog.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://github.com/DarkCookieSF" target="_blank">GitHub</a> |
+    <a href="https://steamcommunity.com/id/darkcookiesf/" target="_blank">Steam</a>
+  </footer>
+</body>
+</html>
